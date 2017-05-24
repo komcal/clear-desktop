@@ -5,12 +5,12 @@ shell.cd('Desktop');
 
 const currTime = new Date();
 
-shell.exec(`mkdir "${currTime}"`);
-console.log(`create folder ${currTime}`);
+shell.exec('mkdir "' + currTime + '"');
+console.log('create folder', currTime);
 
-shell.ls('*').map((file) => {
-  shell.mv(file, `${currTime}/`);
-  console.log(`${file} has been moved.`);
+shell.ls('*').forEach(function(file) {
+  shell.mv(file, currTime + '/');
+  console.log(file,'has been moved.');
 });
 
 shell.echo('move file completed');

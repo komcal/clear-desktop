@@ -9,6 +9,6 @@ npm install -g clear-desktop
 
 ### Usage
 ```
-#move all file in Desktop tp folder
+#move all file in Desktop to folder
 clear-desktop
 ```

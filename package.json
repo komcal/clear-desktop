@@ -1,10 +1,14 @@
 {
   "name": "clear-desktop",
   "version": "1.0.0",
-  "description": "",
+  "description": "clear your Desktop with one command",
   "main": "bin/main.js",
   "scripts": {
     "start": "node bin/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/komcal/clear-desktop.git"
   },
   "bin": {
     "clear-desktop": "bin/main.js"
@@ -12,7 +16,11 @@
   "preferGlobal": true,
   "keywords": [],
   "author": "komcal",
-  "license": "ISC",
+  "license": "MIT",
+    "bugs": {
+    "url": "https://github.com/komcal/clear-desktop/issues"
+  },
+  "homepage": "https://github.com/komcal/clear-desktop#readme",
   "dependencies": {
     "shelljs": "^0.7.7"
   }

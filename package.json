@@ -2,11 +2,18 @@
   "name": "clear-desktop",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "bin/main.js",
   "scripts": {
-    "start": "./command.sh"
+    "start": "node bin/main.js"
   },
+  "bin": {
+    "clear-desktop": "bin/main.js"
+  },
+  "preferGlobal": true,
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "komcal",
+  "license": "ISC",
+  "dependencies": {
+    "shelljs": "^0.7.7"
+  }
 }

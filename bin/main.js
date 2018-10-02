@@ -23,7 +23,7 @@ console.log('create folder: ', folderName);
 
 const folderLocation = shell.pwd().toString() + '/' + folderName;
 
-shell.ls('*').forEach(function(file) {
+shell.ls('').forEach(function(file) {
   shell.mv(file, folderLocation + '/');
   console.log(file,'has been moved.');
 });
